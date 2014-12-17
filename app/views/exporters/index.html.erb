@@ -1,0 +1,16 @@
+<%= form_for 'file_contents', :url => '/exporters' do |f| %>
+    <input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+    <div class="fileUpload btn btn-primary">
+      <span>Upload</span>
+      <%= f.file_field :xml_file, :class => 'upload', :id=> 'uploadBtn' %>
+      <!--<input id="uploadBtn" type="file" class="upload" />-->
+    </div>
+    <br>
+    <%= f.submit "Go go !!!", :class => 'btn btn-default btn-lg' %>
+    <!--<a href="#" class="btn btn-default btn-lg">Go!!!</a>-->
+<% end %>
+<script type="text/javascript">
+    document.getElementById("uploadBtn").onchange = function () {
+        document.getElementById("uploadFile").value = this.value;
+    };
+</script>

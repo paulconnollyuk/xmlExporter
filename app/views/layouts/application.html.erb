@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XmlExporter</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-bold" data-spy="affix" data-offset-top="1000">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">Home</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#sec1">Section 1</a></li>
+        <li><a href="#sec2">Section 2</a></li>
+        <li><a href="#sec3">Section 3</a></li>
+        <li><a href="#sec4">Section 4</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="header vert">
+  <div class="container">
+
+    <h1>XML Exporter</h1>
+    <p class="lead">Upload .odt file with data to get XML output!</p>
+    <div>&nbsp;</div> <br>
+    <%= yield %>
+    <!--<a href="#" class="btn btn-default btn-lg">Go go!!!</a>-->
+  </div>
+</div>
+
+<div id="sec1" class="blurb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>The Simplicity of Bootstrap</h1>
+        <p class="lead">The Most Popular Responsive Framework</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="featurette" id="sec2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Amazing Features</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-rocket"></i>
+          <h4>Rocket</h4>
+          <p>Up-up-and-away with this starter template.</p>
+        </div>
+      </div>
+      <div class="col-md-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-magnet"></i>
+          <h4>Magnet</h4>
+          <p>For you are a magnet and I am steel.</p>
+        </div>
+      </div>
+      <div class="col-md-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-shield"></i>
+          <h4>Shield</h4>
+          <p>Protect yourself. Don't design like it's 1999.</p>
+        </div>
+      </div>
+      <div class="col-md-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-pencil"></i>
+          <h4>Scholar</h4>
+          <p>Because lead pencils are pretty smart looking.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
